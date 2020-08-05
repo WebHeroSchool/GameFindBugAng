@@ -5,6 +5,7 @@
   background-image: url("./background.png");
   background-size: 100vw 100vh;
   cursor: default;
+  overflow: hidden;
 }
 
 .title {
