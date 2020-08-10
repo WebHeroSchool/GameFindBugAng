@@ -51,7 +51,14 @@
   border-radius: 7px;
   border: none;
   align-self: center;
-  box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.start:hover {
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: translateY(-8px);
 }
 
 .cards__block {
@@ -81,6 +88,10 @@
   width: 100%;
 }
 
+.list li:hover {
+  list-style-image: url("./list.png");
+}
+
 .clickToList {
   list-style-image: url("./list.png");
 }
@@ -100,5 +111,29 @@
 @media (max-width: 768px) {
   .clickToList {
     list-style-image: url("./list_small.png");
+  }
+
+  .list li:hover {
+    list-style-image: url("./list_small.png");
+  }
+}
+
+@media (max-width: 490px) {
+  .clickToList {
+    list-style-image: url("./list_xsmall.png");
+  }
+
+  .list li:hover {
+    list-style-image: url("./list_xsmall.png");
+  }
+}
+
+@media (min-width: 1520px) {
+  .clickToList {
+    list-style-image: url("./list_big.png");
+  }
+
+  .list li:hover {
+    list-style-image: url("./list_big.png");
   }
 }

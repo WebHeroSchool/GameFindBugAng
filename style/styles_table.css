@@ -1,11 +1,10 @@
 .table {
-  width: 60vw;
+  width: 55vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  position: relative;
 }
 
 .card {
@@ -56,4 +55,26 @@
 
 .reverse {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 320px) {
+  .table__hard {
+    width: 95vw;
+  }
+}
+
+@media (min-width: 1520px) {
+  .table {
+    width: 45vw;
+  }
+
+  .table__hard {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1955px) {
+  .table__hard {
+    width: 60vw;
+  }
 }
