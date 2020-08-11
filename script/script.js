@@ -1,6 +1,11 @@
 const LEVELS = ['simple', 'medium', 'hard'];
 const button = document.getElementById('start');
 
+button.onclick = () => {
+  document.location = `./table.html`;
+  localStorage.setItem('level', 'simple');
+};
+
 let chooseLevelById = function (ids) {
   ids.forEach(id => {
     let level = document.getElementById(id);
