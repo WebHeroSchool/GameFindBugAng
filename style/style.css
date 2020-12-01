@@ -1,0 +1,139 @@
+.body {
+  color: #fff;
+  background-image: url("./background.png");
+  background-size: 100vw 100vh;
+  cursor: default;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.content {
+  width: 80vw;
+  margin: auto;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vw;
+  margin-top: 0;
+  margin-bottom: 1vh;
+}
+
+.choiсe {
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 1.6vw;
+  margin-bottom: 4vh;
+}
+
+.list {
+  list-style-type: none;
+  width: fit-content;
+}
+
+.list__simple,
+.list__medium,
+.list__hard {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vw;
+  margin-bottom: 3vh;
+}
+
+.start {
+  background-color: #d62b2e;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5vw;
+  width: 10em;
+  height: 2.5em;
+  border-radius: 7px;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.start:hover {
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+.cards__block {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards__left {
+  transform: rotate(11.9deg);
+}
+.cards__right {
+  transform: rotate(39.26deg);
+}
+
+.cards__left,
+.cards__right {
+  max-width: 11vw;
+}
+
+.cards-img__left,
+.cards-img__right {
+  width: 100%;
+}
+
+.list li:hover {
+  list-style-image: url("./list.png");
+}
+
+.clickToList {
+  list-style-image: url("./list.png");
+}
+
+.list__simple:hover{
+  cursor: pointer;
+}
+
+.list__medium:hover{
+  cursor: pointer;
+}
+
+.list__hard:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .clickToList {
+    list-style-image: url("./list_small.png");
+  }
+
+  .list li:hover {
+    list-style-image: url("./list_small.png");
+  }
+}
+
+@media (max-width: 490px) {
+  .clickToList {
+    list-style-image: url("./list_xsmall.png");
+  }
+
+  .list li:hover {
+    list-style-image: url("./list_xsmall.png");
+  }
+}
+
+@media (min-width: 1520px) {
+  .clickToList {
+    list-style-image: url("./list_big.png");
+  }
+
+  .list li:hover {
+    list-style-image: url("./list_big.png");
+  }
+}
